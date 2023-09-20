@@ -1,0 +1,53 @@
+{% include 'admin_cabecera.html' %}
+
+<div class="caja3">
+    <div class="caja4">
+        <h2 class="text-center">Usuarios</h2>
+        <div class="table-responsive">
+            {% if usuarios_ad %}
+            
+        <table class="table table-striped">
+            <thead class="table-dark table-responsive-lg">
+               
+                <tr>
+                  <th scope="col">Nº</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Carnet</th>
+                  <th scope="col">Genero</th>
+                  <th scope="col">Edad</th>
+                  <th scope="col">Correo</th>
+                  <th scope="col">Password</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for mostrar in usuarios_ad %}
+                <tr>
+                    
+                  <td scope="row">{{mostrar.id}} </td>
+                  <td>{{mostrar.nombre}} </td>
+                  <td>{{mostrar.carnet}} </td>
+                  <td>{{mostrar.genero}} </td>
+                  <td>{{mostrar.edad}} </td>
+                  <td>{{mostrar.correo}} </td>
+                  <td>{{mostrar.password}} </td>
+                
+                </tr>
+                {% endfor %}
+              </tbody>
+          </table>
+          {% else %}
+          <p>No hay Datos</p>
+      {% endif %}
+          
+          <div class="text-center">
+            <a href="#" class="btn btn-success">Generar Reporte</a>
+          </div><br>
+        </div>
+        
+    </div>
+</div>
+
+{% include 'admin_pie.html' %}
+
+</body>
+</html>

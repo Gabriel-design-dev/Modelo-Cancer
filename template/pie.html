@@ -1,0 +1,84 @@
+<footer>
+    <div class="main-contente">
+      <div class="left boxe">
+        <h2 class="texto-form">INFORMACION</h2>
+        <div class="contente">
+          <p class="tx">Si estás buscando ayuda con sistemas, aplicaciones web, problemas de soporte técnico, infraestructura, asistencia administrativa, diseño, proyectos de grado, tesis y más, no dudes en contactarme. Estoy disponible para brindarte asistencia en estas áreas y trabajar contigo para resolver cualquier desafío que puedas tener. ¡No dudes en comunicarte conmigo y juntos encontraremos la solución adecuada para tus necesidades!
+          </p>
+          <div class="social">
+            <a href=""><span class="fab fa-facebook-f"></span></a>
+            <a href="#"><span class="fab fa-twitter"></span></a>
+            <a href="https://www.instagram.com/gabriel_freestlye/"><span class="fab fa-instagram"></span></a>
+            <a href="https://www.youtube.com/c/GABRIELHD-ING-SISTEMAS/videos"><span class="fab fa-youtube"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="center boxe">
+        <h2 class="texto">Contactos</h2>
+        <div class="contente">
+          <div class="place">
+            <span class="fas fa-map-marker-alt"></span>
+            <span class="texto">La paz</span>
+          </div>
+          <div class="phone">
+            <span class="fas fa-phone-alt"></span>
+            <span class="texto">+591 78819752</span>
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="texto">gs59679@gmail.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="right boxe">
+        <h2 clas="texto">Deja Tu Mensaje</h2>
+        <div class="contente">
+          <!---formulario de mensajes-->
+          <form action="#" method="post">
+            <div class="email">
+              <div class="texto-form">Correo Electronico</div>
+              <input type="email" required name="txtEmail">
+            </div>
+            <div class="msg">
+              <div class="texto-form">Mensaje</div>
+              <textarea rows="2" cols="25" required name="txtMensaje"></textarea>
+            </div>
+            <div class="btne">
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <center>
+        <span class="credit">Desarrollado Por <a href="https://www.codingnepalweb.com">GABRIEL-OMC-ING-SISTEMAS</a> | </span>
+        <span class="far fa-copyright"></span><span> 2023 Derechos Reservados</span>
+      </center>
+    </div>
+  </footer>
+ 
+  <script src="js/script.js"></script>
+  
+  <script src="js/scripts.js"></script>
+  <script src="https://kit.fontawesome.com/7325a27477.js" crossorigin="anonymous"></script>
+  <script>
+    const imagenes = document.querySelectorAll('.imagen');
+
+imagenes.forEach((imagen) => {
+imagen.addEventListener('mousemove', (e) => {
+const { offsetX, offsetY } = e;
+const { width, height } = imagen.getBoundingClientRect();
+const x = (offsetX / width) * 100;
+const y = (offsetY / height) * 100;
+imagen.style.transformOrigin = `${x}% ${y}%`;
+});
+});
+
+  
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/index.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script>
+</body>
+</html>

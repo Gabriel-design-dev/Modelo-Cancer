@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+body{
+
+    background: -webkit-linear-gradient(to right, rgba(33, 35, 48, 0.473), rgba(83, 105, 118, 0.5), rgba(187, 210, 197, 0.479)),url(../IMG/fondo2.jpeg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(33, 35, 48, 0.521), rgba(83, 105, 118, 0.527), rgba(187, 210, 197, 0.466)),url(../IMG/fondo2.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+
+}
+.enca{
+ background: rgba(0,0,0,0.70);
+ overflow: hidden;
+ width: 100%;
+ margin-bottom: 20px;
+ left: 0px;
+ top: 0px;
+ z-index: 100;
+ position: fixed;
+}
+.wrap{
+   width: 90%;
+   max-width: 1280px;
+   margin: auto; 
+   overflow: hidden;
+}
+.logos{
+   color: white;
+   font-size: 40px;
+   font-family: Berlin Sans FB;
+   line-height: 70px;
+   float: left;
+}
+nav{
+    line-height: 70px;
+    float: right;
+}
+nav a{
+    color:white;
+    display: inline-block;
+    text-decoration: none;
+    font-family: Arial Narrow;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 20px 10px;
+   line-height: normal;
+    -webkit-transition:all 500ms ease;
+    transition:all 500ms ease;
+}
+nav a:hover{
+    color: rgb(28, 201, 28);
+    border-bottom: 5px solid green;
+}
+.midtext{
+    color: white;
+    font-size: 40px;
+    padding: 20%;
+    text-align: center;
+}
+.espacio-tabla{
+    padding: 10%;
+}
+.editar{
+padding: 20%;
+}
+.p{
+    color: white;
+}
+.foto{
+    border-radius: 50%;
+    border: 29px;
+  
+}
+.reportes{
+   text-align: center;
+}
+.blanco{
+    color: white;
+    font-family: 'Courgette', cursive;
+}
+.titulo{
+   
+    text-align: center;
+}
+@media only screen and (min-width:360px) and (max-width:757px){
+  .enca{
+      height: 70px;
+  }
+  .wrap{
+      margin:  30px;
+        margin-top: -10px;
+  }  
+  .logos{
+      font-size: 30px;
+      margin-left: 70px;
+  }
+  nav{
+      margin-top: -40px;
+      transform: translateX(-3%);
+      float: left;
+      margin-left: 10px;
+  }
+  nav a{
+      font-size: 15px;
+      padding: 2px;
+      text-decoration: none;
+      color: rgb(198, 250, 199);
+      
+  }
+}

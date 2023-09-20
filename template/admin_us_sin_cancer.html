@@ -1,0 +1,49 @@
+{% include 'admin_cabecera.html' %}
+
+<div class="caja3">
+    <div class="caja4">
+        <h2 class="text-center">Usuarios Sin Sintomas de Cancer</h2>
+        <div class="table-responsive">
+            {% if predicciones %}
+            
+        <table class="table table-striped">
+            <thead class="table-dark table-responsive-lg">
+               
+                <tr>
+                  <th scope="col">Nº</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Edad</th>
+                  <th scope="col">Genero</th>
+                  <th scope="col">Sintoma</th>
+                  <th scope="col">Prediccion</th>
+        
+                </tr>
+              </thead>
+              <tbody>
+                {% for mostrar in predicciones %}
+                <tr>
+                    
+                  <td scope="row">{{mostrar.id}} </td>
+                  <td scope="row">{{mostrar.nombre}} </td>
+                  <td>{{mostrar.edad}} </td>
+                  <td>{{mostrar.genero}} </td>
+                  <td>{{mostrar.preg1}} </td>
+                  <td>{{mostrar.prediccion}} </td>
+                  
+                
+                </tr>
+                {% endfor %}
+              </tbody>
+          </table>
+          {% else %}
+          <p>No hay Datos</p>
+      {% endif %}
+          
+        </div>
+        <div class="text-center">
+            <a href="#" class="btn btn-success">Generar Reporte</a>
+          </div><br>
+    </div>
+</div>
+
+{% include 'admin_pie.html' %}

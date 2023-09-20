@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap');
+.seccion-estudios{
+    background-color: white;
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(19, 4, 4);
+    margin-top: -20px;
+  }
+  
+  .caja {
+    flex: 1 0 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+   margin: -6px;
+  }
+  
+  .subcaja {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .subcaja-h3{
+    font-family: 'Cabin Condensed', sans-serif;
+  }
+  .subtitulo{
+    align-items: center;
+    font-size: 28px;
+    font-family: 'Kaushan Script', cursive;
+  }
+  .iconos{
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+  }
+  @media (min-width: 768px) {
+    .caja {
+      flex-basis: calc(50% - 5px);
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+  
+    .caja:last-child {
+      margin-right: 0;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; /* Agregamos esta línea */
+      background-color: rgb(255, 255, 255);
+    }
+    .caja {
+        flex-basis: calc(50% - 5px);
+        margin-right: 10px;
+        margin-bottom: -10px;
+      }
+      .caja:last-child {
+        margin-right: 0;
+      }
+  }
+  

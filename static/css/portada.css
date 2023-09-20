@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+.portada {
+    position: relative;
+    text-align: center;
+    height: 400px;
+ 
+  }
+  
+  .portada img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover; 
+  
+  }
+  .img-port{
+    margin-left: 0px;
+  }
+  .img-portada{
+    position: absolute;
+    margin: 30px;
+  }
+  .portada h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Bad Script', cursive;
+  }
+  @media (min-width: 425px) {
+    .portada {
+        position: relative;
+        text-align: center;
+        height: 200px;
+     
+      }
+    .portada img {
+        margin-top: 40px;
+        width: 100%;
+        max-height: 100%;
+        
+      }
+      .portada h1 {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 36px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+       
+      }
+  }
+  @media (min-width: 375px) {
+    .portada {
+        position: relative;
+        text-align: center;
+        height: 200px;
+     
+      }
+    .portada img {
+        margin-top: 70px;
+        width: 100%;
+        max-height: 100%;
+        
+      }
+      .portada h1 {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 36px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+       
+      }
+  }
+  @media (min-width: 320px) {
+    .portada {
+        position: relative;
+        text-align: center;
+        height: 300px;
+     
+      }
+    .portada img {
+        margin-top: 70px;
+        width: 100%;
+        max-height: 100%;
+        
+      }
+      .portada h1 {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 36px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+       
+      }
+  }
+  @media (min-width: 768px) {
+    .portada {
+        position: relative;
+        text-align: center;
+        height: 500px;
+     
+      }
+    .portada img {
+        margin-top: 0px;
+        width: 100%;
+        max-height: 100%;
+        
+      }
+      .portada h1 {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 36px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+       
+      }
+  }

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+.portada_admin{
+align-items: center;
+margin-top: 30px;
+
+}
+.titulo-admin{
+    font-size: 30px;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+}
+.caja5{
+    margin-left: 0px;
+    margin-right: 0px;
+    background-image: url(../IMG/por.jpg);
+    object-fit: cover; 
+    background-size: auto; /* Reducir el tamaño de la imagen al 50% de la altura de la caja */
+    background-position: auto; /* Posicionar la imagen en el centro horizontal y en la parte inferior vertical */
+    background-repeat: no-repeat; 
+    margin-top: -34px;
+    border-radius: 30px;
+    height: 200px;
+}
+.caja6{
+    margin: 30px;
+  
+}
+
+.formulario{
+margin: 30px;
+}
+.titulo-diagnostico{
+    font-family: 'Righteous', cursive;
+}
+.table-responsive{
+    border-radius: 10px;
+}
+@media (max-width: 520px){
+    .caja5{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        height: 230px;
+        
+    }
+    .caja6{
+        margin: 10px;  
+    }
+    .row .col-sm-6 .card{
+        margin-bottom: 20px;
+    }
+    .formulario{
+        margin: 15px;
+        }
+}

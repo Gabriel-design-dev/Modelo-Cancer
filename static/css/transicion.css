@@ -1,0 +1,15 @@
+@import "transition-style";
+@keyframes circle-swoop {
+    from {
+      clip-path: var(--circle-top-left-out);
+    }
+    to {
+      clip-path: var(--circle-bottom-left-in);
+    }
+  }
+  
+  .--in-custom {
+    --transition__duration: 5s;
+    --transition__easing: ease-in-out;
+    animation-name: circle-swoop;
+  }

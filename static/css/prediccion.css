@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+.caja0{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.caja1{
+    margin: 30px;
+    background-color: white;
+}
+.formulario{
+margin: 30px;
+}
+.titulo-diagnostico{
+    font-family: 'Righteous', cursive;
+}
+@media (max-width: 520px){
+    .caja0{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .caja1{
+        margin: 8px;
+        background-color: white;
+    }
+    .formulario{
+        margin: 15px;
+        }
+}

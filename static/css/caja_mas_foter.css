@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+/*/PARA RESPONSIVE /*/
+
+/*PORTADA NUEVA INICIO**/
+.portada-nuevo{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background: #091016;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, rgba(28, 100, 133, 0.24), rgba(0, 0, 0, 0.342)),url(../IMG/por.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, rgba(21, 89, 128, 0.233), rgba(1, 26, 46, 0.363)),url(../IMG/por.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  object-fit: cover; 
+  background-size: auto; /* Reducir el tamaño de la imagen al 50% de la altura de la caja */
+  background-position: center bottom; /* Posicionar la imagen en el centro horizontal y en la parte inferior vertical */
+  background-repeat: no-repeat; 
+  
+  }
+  .contenido-nuevo{
+      height: 400px;
+      color: white;  
+      position: relative;
+     
+  }
+  .contenido-nuevo h1{
+      font-family: 'Kaushan Script', cursive;
+      font-size: 49px;
+      color: rgb(247, 239, 127);
+  }
+  .contenido-nuevo p{
+      font-size: 25px;
+      font-family: 'Kaushan Script', cursive;
+  }
+  /*PORTADA NUEVA FIN**/
+  /*/PARA RESPONSIVE /*/
+.content12{
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.content12 .text{
+  font-size: 40px;
+  font-family: 'Staatliches', cursive;
+  font-weight: 600;
+  color: #202020;
+}
+.content12 .pe{
+  font-size: 25px;
+  font-weight: 600;
+  color: #202020;
+  margin-bottom: -70px;
+  font-family: 'Kaushan Script', cursive;
+}/*//*/
+footer{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+}
+.main-contente{
+  display: flex;
+}
+.main-contente .boxe{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.boxe h2{
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+}
+.boxe .contente{
+  margin: 20px 0 0 0;
+ position: relative;
+}
+.boxe .contente:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.boxe .contente:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #069401;
+  top: -10px;
+}
+.left .contente .pe{
+  text-align: justify;
+}
+.left .contente .social{
+  margin: 20px 0 0 0;
+}
+.left .contente .social a{
+  padding: 0 2px;
+}
+.left .contente .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: white;
+
+}
+.left .contente .social a span:hover{
+  background: #0b7701;
+}
+.center .contente .fas{
+  font-size: 1.175rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+  color: white;
+}
+.center .contente .fas:hover{
+  background: #188801;
+}
+.center .contente .texti{
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .contente .phone{
+  margin: 15px 0;
+}
+.right form .texti{
+  font-size: 1.000rem;
+  margin-bottom: 2px;
+  color: #ffffff;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 15px;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+  color: white;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btne{
+  margin-top: 10px;
+}
+.right form .btne button{
+  height: 35px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: hsl(115, 97%, 25%);
+  font-size: 1.000rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+  color: white;
+}
+.right form .btne button:hover{
+  background: #000;
+  color: white;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.6375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #ffffff;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+.tx{
+    text-align: justify;
+    color: wheat;
+}
+.texto{
+    color: white;
+}
+.texto-form{
+    color: rgb(172, 170, 170);
+ 
+}
+.titulo-crud{
+
+    font-weight: 500;
+    font-family: 'Kaushan Script', cursive;
+}
+@media screen and (max-width: 385px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+    
+  }
+  .main-contente{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-contente .boxe{
+    margin: 5px 0;
+  }
+  
+  .content12 .text{
+    margin-top: -23%;
+    font-size: 30px;
+    font-weight: 600;
+    color: #202020;
+    font-family: 'Staatliches', cursive;
+    
+  }  
+  .content12 .text2{
+    margin-top: 0%;
+    font-size: 33px;
+    font-weight: 600;
+    color: #202020;
+    font-family: 'Staatliches', cursive;
+    
+  }  
+  .content12 .pe{
+    color: #250515;
+    margin-bottom: 20px;
+    font-family: 'Kaushan Script', cursive;
+    
+  }  
+  .content12 .pe2{
+    color: #250515;
+    margin-bottom: -30px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+    
+  }  
+  .img-port{
+    margin-left: 0px;
+  }
+  .img-portada{
+    position: absolute;
+    margin: 30px;
+  }
+}
+/*//PARA 600 PX***/
+@media screen and (max-width: 600px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+    
+  }
+  .contenido-nuevo h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 39px;
+    color: rgb(247, 239, 127);
+}
+.contenido-nuevo p{
+    font-size: 25px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+  .main-contente{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-contente .boxe{
+    margin: 5px 0;
+  }
+    
+ .content12 .text{
+        margin-top: 20%;
+        font-size: 30px;
+        font-weight: 600;
+        color: #202020;
+        font-family: 'Staatliches', cursive;
+        
+      }  
+      .content12 .text2{
+        margin-top: 0%;
+        font-size: 33px;
+        font-weight: 600;
+        color: #202020;
+        font-family: 'Staatliches', cursive;
+        
+      }  
+      .content12 .pe{
+        color: #250515;
+        margin-bottom: -30px;
+        font-family: 'Kaushan Script', cursive;
+        
+      }  
+      .content12 .pe2{
+        color: #250515;
+        margin-bottom: -30px;
+        font-family: 'Kaushan Script', cursive;
+        font-size: 25px;
+        
+      }  
+      .img-port{
+        margin-left: 0px;
+      }
+      .img-portada{
+        width: 10px;
+        display: none;
+        position: absolute;
+        margin: 30px;
+      }
+      }
+      @media screen and (max-width: 600px) {
+        footer{
+          position: relative;
+          bottom: 0px;
+          
+        }
+        .main-contente{
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
+        .main-contente .boxe{
+          margin: 5px 0;
+        }
+        
+            .content12 .text{
+              margin-top: 10%;
+              font-size: 30px;
+              font-weight: 600;
+              color: #202020;
+              font-family: 'Staatliches', cursive;
+              
+            }  
+            .content12 .text2{
+              margin-top: 0%;
+              font-size: 33px;
+              font-weight: 600;
+              color: #202020;
+              font-family: 'Staatliches', cursive;
+              
+            }  
+            .content12 .pe{
+              color: #250515;
+              margin-bottom: -30px;
+              font-family: 'Kaushan Script', cursive;
+              
+            }  
+            .content12 .pe2{
+              color: #250515;
+              margin-bottom: -30px;
+              font-family: 'Kaushan Script', cursive;
+              font-size: 25px;
+              
+            }  
+            .img-port{
+              margin-left: 0px;
+            }
+            .img-portada{
+              width: 10px;
+              display: none;
+              position: absolute;
+              margin: 30px;
+            }
+        }
