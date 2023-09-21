@@ -133,10 +133,10 @@
        </style>
       <div class="text-center medio-op">
         <div class="cajass">
-          <a class="col" href="">Sobre Nosotros</a>
+          <a class="col" href="#" id="nosotros-button">Sobre Nosotros</a>
           <a class="col" href="">Enfermedades</a>
           <a class="col" href="">Tipos de Cancer Bucal</a>
-          <a class="col" href="">Contactos</a>
+          <a class="col" href="#" id="contact-button">Contactos</a>
         </div>
       </div>
       <!------------------------->
@@ -147,6 +147,41 @@
       </div>
       <!--PORTADA NUEVA FIN-->
 <br>
+<!----SCRIPT PARA BOTON DE CONTACTOS----->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Obtén una referencia al botón
+    const contactButton = document.getElementById("contact-button");
+    const nosotrosButton = document.getElementById("nosotros-button");
+  
+    // Agrega un evento de clic al botón
+    contactButton.addEventListener("click", function (e) {
+      e.preventDefault(); // Evita que el enlace se abra
+  
+      // Muestra el mensaje SweetAlert
+      Swal.fire({
+        title: 'Desarrolladora',
+        html: 'Contactos <br> WhatsApp: 70554793 <br>Correo: choqueErika@gmail.com',
+        imageUrl: './static/img/desarrolladora.jpg',
+        imageWidth: 250,
+        imageHeight: 300,
+        imageAlt: 'Custom image',
+      });
+    });
+
+   // Agrega un evento de clic al botón a nosotros
+   nosotrosButton.addEventListener("click", function (e) {
+    e.preventDefault(); // Evita que el enlace se abra
+
+    // Muestra el mensaje SweetAlert
+    Swal.fire({
+      title: 'Sobre Nosotros',
+      html: '"Medical Sys es una potente y avanzada herramienta de detección de cáncer bucal que ofrece resultados clínicos de primera clase en menos de 10 minutos. Con un enfoque en la precisión y la eficiencia, esta innovadora tecnología proporciona detalles excepcionales y una meticulosa evaluación de la superficie oral..',
+    });
+  });
+});
+  </script>
+  
 <!-----LOGIN-->
 <main class="formulario">
   
@@ -505,7 +540,7 @@
 </div>
 <!---FORMACION ACADEMICA-->
     <!---DISEÑOS REALIZADOS --> <br>
-<h2 class="text-center subtitulo">Diseños Realizados</h2> <br>
+<h2 class="text-center subtitulo">Tecnologia de Punta</h2> <br>
 
 <section class="tarjetas" >
   <div class="tarjeta">
@@ -642,7 +677,7 @@
         </div>
         <div class="bottom">
           <center>
-            <span class="credit">Desarrollado Por <a href="https://www.codingnepalweb.com">GABRIEL-OMC-ING-SISTEMAS</a> | </span>
+            <span class="credit">Desarrollado Por <a href="https://www.codingnepalweb.com">Erika - Cruz-ING-SISTEMAS</a> | </span>
             <span class="far fa-copyright"></span><span> 2023 Derechos Reservados</span>
           </center>
         </div>
